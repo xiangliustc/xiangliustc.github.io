@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xiang Li</title>
+  <meta name="description" content="Xiang Li, M.S. student at the University of Science and Technology of China. First author of papers accepted to NeurIPS 2026 and CVPR 2026.">
+  <meta name="theme-color" content="#0c3d73">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230c3d73'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='28' fill='white' font-family='Georgia'%3EXL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Xiang Li",
+    "email": "mailto:xiangli@mail.ustc.edu.cn",
+    "jobTitle": "M.S. Student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Science and Technology of China"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#about">Xiang Li</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#papers">Publications</a>
+        <a href="#experience">Internships</a>
+        <a href="#education">Education</a>
+        <a href="#service">Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="about">
+      <div class="portrait">
+        <img src="images/1.jpg" alt="Xiang Li">
+      </div>
+      <div>
+        <h1 class="ename">Xiang Li</h1>
+        <p class="subtitle">M.S. Student, University of Science and Technology of China<br>Computer Application Technology</p>
+        <a class="mail" href="mailto:xiangli@mail.ustc.edu.cn">xiangli@mail.ustc.edu.cn</a>
+        <button class="copy" type="button" data-copy="xiangli@mail.ustc.edu.cn">Copy</button>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <hr class="rule">
+      <ul class="news">
+        <li>
+          <time>2026</time>
+          <div>🏆 Received the National Scholarship at the University of Science and Technology of China.</div>
+        </li>
+        <li>
+          <time>Sep 25, 2026</time>
+          <div>🎉 <strong>Q-Probe</strong> was accepted to NeurIPS 2026. First author.</div>
+        </li>
+        <li>
+          <time>Feb 21, 2026</time>
+          <div>🎉 <strong>Look Before You Fuse</strong> was accepted to CVPR 2026. First author.</div>
+        </li>
+        <li>
+          <time>Under review</time>
+          <div>📝 <strong>PCPD</strong> submitted to EMNLP. <strong>Q-Evolver</strong> submitted to AAAI 2027. Both first author.</div>
+        </li>
+      </ul>
+    </section>
+
+    <p class="lead">
+      I am a master’s student in Computer Application Technology at the University of Science and Technology of China, admitted by recommendation, and I expect to graduate in June 2027. My work is on large-model post-training, agentic image quality assessment, and 3D detection that fuses point clouds with images. I am the first author of papers accepted to NeurIPS 2026 and CVPR 2026. I received my B.E. in Software Engineering from Hefei University of Technology.
+    </p>
+    <div class="facts">
+      <div class="fact"><b>Age 25</b><span>Male · CPC Member</span></div>
+      <div class="fact"><b>CET-4 / CET-6</b><span>604 / 607</span></div>
+      <div class="fact"><b>Jun 2027</b><span>Expected graduation</span></div>
+      <div class="fact"><b>Large models</b><span>Research interest</span></div>
+    </div>
+
+    <section id="papers">
+      <h2>Publications</h2>
+      <hr class="rule">
+
+      <article class="paper">
+        <img class="mark" src="images/logos/neurips.svg" alt="NeurIPS">
+        <div>
+        <div class="badges">
+          <span class="badge">NeurIPS 2026 · Accepted Sep 25, 2026</span>
+          <span class="who">First author</span>
+        </div>
+        <h3>Q-Probe: Scaling Image Quality Assessment to High Resolution via Context-Aware Agentic Probing</h3>
+        <p class="meta">8× A100 · Context-aware agentic probing for image quality assessment</p>
+        <ol class="points">
+          <li><strong>Agentic framework.</strong> Downsampling at high resolution drops fine detail, and cropping is often mistaken for distortion. Q-Probe is an agentic IQA framework in the Thinking with Images style, following a human “look globally, then inspect locally” process.</li>
+          <li><strong>Vista-Bench.</strong> A high-resolution, fine-grained IQA benchmark. Wavelets separate structure from texture, subtle damage is injected into semantically important regions, and Gemini-2.5 writes hierarchical labels so natural bokeh is not confused with blur artifacts.</li>
+          <li><strong>Three-stage training.</strong> Low-resolution GRPO aligns global taste. Mixed-resolution SFT uses a data flywheel of positive and negative chain-of-thought traces to remove tool-use bias. Decoupled post-RL splits the rewards for localization and scoring.</li>
+        </ol>
+        </div>
+      </article>
+
+      <article class="paper">
+        <img class="mark on-dark" src="images/logos/cvpr.svg" alt="CVPR">
+        <div>
+        <div class="badges">
+          <span class="badge">CVPR 2026 · Accepted Feb 21, 2026</span>
+          <span class="who">First author</span>
+        </div>
+        <h3>Look Before You Fuse: 2D-Guided Cross-Modal Alignment for Robust 3D Detection</h3>
+        <p class="meta">8× 4090 · BEV 3D detection by fusing point-cloud and image features · nuScenes mAP 71.5%</p>
+        <ol class="points">
+          <li>A 2D-prior-guided cross-modal alignment method for the spatial mismatch between LiDAR and cameras.</li>
+          <li>Prior-Guided Depth Calibration (PGDC) reduces local feature misalignment. Discontinuity-Aware Geometric Fusion (DAGF) suppresses global noise.</li>
+          <li>A Structure-Guided Depth Modulator (SGDM) fuses the aligned depth with image features. The method reaches SOTA on nuScenes, with mAP <strong>71.5%</strong>.</li>
+        </ol>
+        </div>
+      </article>
+
+      <article class="paper">
+        <img class="mark" src="images/logos/emnlp.png" alt="EMNLP">
+        <div>
+        <div class="badges">
+          <span class="badge pending">EMNLP · Under review</span>
+          <span class="who">First author</span>
+        </div>
+        <h3>PCPD: Partial Complementary Policy Distillation for Multi-Dimensional AIGC Image Quality Assessment</h3>
+        <p class="meta">8× A800 · Agentic IQA and policy distillation</p>
+        <ol class="points">
+          <li><strong>Partial complementary policy distillation.</strong> Joint training of global aesthetics and local physical constraints causes gradient conflict. PCPD splits the conflicting axes into an agentic expert and a global expert, then folds both into one model with mutual on-policy distillation.</li>
+          <li><strong>Self-evolving skills.</strong> A visual zoom tool follows a global–local–global scan so overall taste does not hide local defects. GRPO-based self-reflection turns diagnosed biases into a dynamic skill bank.</li>
+          <li><strong>AIGC-IQA-Bench.</strong> After joint optimization, the model no longer calls external tools at inference and outperforms baselines on aesthetics, lighting, shadow, and realism.</li>
+        </ol>
+        </div>
+      </article>
+
+      <article class="paper">
+        <img class="mark" src="images/logos/aaai.svg" alt="AAAI">
+        <div>
+        <div class="badges">
+          <span class="badge pending">AAAI 2027 · Under review</span>
+          <span class="who">First author</span>
+        </div>
+        <h3>Q-Evolver: From Visual Experience to Generalizable Rules via Self-Evolving Agentic IQA</h3>
+        <p class="meta">8× A100 · Self-evolving agentic IQA · 37.7% faster inference</p>
+        <ol class="points">
+          <li><strong>Two-level self-evolving agent.</strong> Local crops break context, so depth of field and motion blur get treated as distortion. Q-Evolver keeps a general skill bank and a domain-specific one, and reuses what it has already learned.</li>
+          <li><strong>Dynamic multimodal skills.</strong> Each skill is a visual example plus written guidance. Reinforcement learning adds, deletes, edits, merges, or turns skills into text, so the agent learns to tell real degradation from ordinary camera effects.</li>
+          <li><strong>Skill internalization.</strong> Once a skill is triggered often enough and its reward is stable, the visual reference is distilled into a short text rule. Inference is <strong>37.7%</strong> more efficient.</li>
+        </ol>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Internships</h2>
+      <hr class="rule">
+      <ul class="orgs">
+        <li>
+          <img src="images/logos/midea.svg" alt="Midea">
+          <span>Midea</span>
+        </li>
+        <li>
+          <img src="images/logos/cas-emblem.jpg" alt="Chinese Academy of Sciences">
+          <span>Chinese Academy of Sciences</span>
+        </li>
+        <li>
+          <img src="images/logos/meituan.png" alt="Meituan">
+          <span>Meituan</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <hr class="rule">
+
+      <article class="school">
+        <div class="school-head">
+          <h3>University of Science and Technology of China <span class="tag">· 985 · M.S., recommended admission</span></h3>
+          <span class="when">Sep 2024 — Jun 2027</span>
+        </div>
+      </article>
+
+      <article class="school">
+        <div class="school-head">
+          <h3>Hefei University of Technology <span class="tag">· 211 · B.E. · Outstanding Graduate</span></h3>
+          <span class="when">Sep 2020 — Jun 2024</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="service">
+      <h2>Service</h2>
+      <hr class="rule">
+      <ul class="orgs two">
+        <li>
+          <img src="images/logos/aaai.svg" alt="AAAI">
+          <span>AAAI Reviewer</span>
+        </li>
+        <li>
+          <img src="images/logos/iclr.svg" alt="ICLR">
+          <span>ICLR Reviewer</span>
+        </li>
+      </ul>
+    </section>
+
+    <footer>Xiang Li · University of Science and Technology of China</footer>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
