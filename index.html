@@ -66,10 +66,6 @@
           <time>Feb 21, 2026</time>
           <div>🎉 <strong>Look Before You Fuse</strong> was accepted to CVPR 2026. First author.</div>
         </li>
-        <li>
-          <time>Under review</time>
-          <div>📝 <strong>PCPD</strong> submitted to EMNLP. <strong>Q-Evolver</strong> submitted to AAAI 2027. Both first author.</div>
-        </li>
       </ul>
     </section>
 
@@ -117,40 +113,6 @@
           <li>A 2D-prior-guided cross-modal alignment method for the spatial mismatch between LiDAR and cameras.</li>
           <li>Prior-Guided Depth Calibration (PGDC) reduces local feature misalignment. Discontinuity-Aware Geometric Fusion (DAGF) suppresses global noise.</li>
           <li>A Structure-Guided Depth Modulator (SGDM) fuses the aligned depth with image features. The method reaches SOTA on nuScenes, with mAP <strong>71.5%</strong>.</li>
-        </ol>
-        </div>
-      </article>
-
-      <article class="paper">
-        <img class="mark" src="images/logos/emnlp.png" alt="EMNLP">
-        <div>
-        <div class="badges">
-          <span class="badge pending">EMNLP · Under review</span>
-          <span class="who">First author</span>
-        </div>
-        <h3>PCPD: Partial Complementary Policy Distillation for Multi-Dimensional AIGC Image Quality Assessment</h3>
-        <p class="meta">8× A800 · Agentic IQA and policy distillation</p>
-        <ol class="points">
-          <li><strong>Partial complementary policy distillation.</strong> Joint training of global aesthetics and local physical constraints causes gradient conflict. PCPD splits the conflicting axes into an agentic expert and a global expert, then folds both into one model with mutual on-policy distillation.</li>
-          <li><strong>Self-evolving skills.</strong> A visual zoom tool follows a global–local–global scan so overall taste does not hide local defects. GRPO-based self-reflection turns diagnosed biases into a dynamic skill bank.</li>
-          <li><strong>AIGC-IQA-Bench.</strong> After joint optimization, the model no longer calls external tools at inference and outperforms baselines on aesthetics, lighting, shadow, and realism.</li>
-        </ol>
-        </div>
-      </article>
-
-      <article class="paper">
-        <img class="mark" src="images/logos/aaai.svg" alt="AAAI">
-        <div>
-        <div class="badges">
-          <span class="badge pending">AAAI 2027 · Under review</span>
-          <span class="who">First author</span>
-        </div>
-        <h3>Q-Evolver: From Visual Experience to Generalizable Rules via Self-Evolving Agentic IQA</h3>
-        <p class="meta">8× A100 · Self-evolving agentic IQA · 37.7% faster inference</p>
-        <ol class="points">
-          <li><strong>Two-level self-evolving agent.</strong> Local crops break context, so depth of field and motion blur get treated as distortion. Q-Evolver keeps a general skill bank and a domain-specific one, and reuses what it has already learned.</li>
-          <li><strong>Dynamic multimodal skills.</strong> Each skill is a visual example plus written guidance. Reinforcement learning adds, deletes, edits, merges, or turns skills into text, so the agent learns to tell real degradation from ordinary camera effects.</li>
-          <li><strong>Skill internalization.</strong> Once a skill is triggered often enough and its reward is stable, the visual reference is distilled into a short text rule. Inference is <strong>37.7%</strong> more efficient.</li>
         </ol>
         </div>
       </article>
